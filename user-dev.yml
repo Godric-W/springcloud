@@ -4,6 +4,12 @@ server:
 spring:
   application:
     name: godshop-user
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: "000000"
+    virtual-host: /
   datasource:
     url: jdbc:mysql://localhost:3307/godcloud?characterEncoding=UTF8&useSSL=false&allowPublicKeyRetrieval=true
     username: root
