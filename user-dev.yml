@@ -1,0 +1,23 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: godshop-user
+  datasource:
+    url: jdbc:mysql://localhost:3307/godcloud?characterEncoding=UTF8&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: "000000"
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    database: mysql
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8888/eureka
+  instance:
+    prefer-ip-address: true
